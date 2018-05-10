@@ -1,5 +1,5 @@
 const colors = {};
 
-colors.blue = '#201024';
+colors.blue = '#1F7299';
 
-export default colors
+export default colors;

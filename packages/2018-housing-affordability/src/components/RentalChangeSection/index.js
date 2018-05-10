@@ -1,20 +1,28 @@
 import React from 'react';
 import '@hackoregon/component-library/assets/global.styles.css';
 import { sectionClass, mainSectionClass, rightSectionClass } from '../shared/styles';
+import { HorizontalBarChart } from '@hackoregon/component-library';
+
+const data = [
+  { sortOrder: 1, rentalChange: 2000, label: '$0-$400' },
+  { sortOrder: 2, rentalChange: 8000, label: 'Less than $400' },
+  { sortOrder: 3, rentalChange: 6000, label: '$400 to $599' },
+  { sortOrder: 4, rentalChange: 3000, label: '600 to 800' },
+  { sortOrder: 5, rentalChange: 1000, label: '800 to 1000' }
+];
 
 const RentalChangeSection = () => (
   <div className={sectionClass}>
     <div className={mainSectionClass}>
       <h2>How has rental affordability changed?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Duis nec condimentum massa, in euismod mauris.
-        Vestibulum ultricies porta nisi, id lobortis nulla malesuada eget.</p>
-      <p>Pellentesque interdum eros et nisl varius, a interdum lacus dapibus.
-        Maecenas commodo semper consequat. Praesent a mollis elit, at rutrum mi.
-        Proin lectus urna, bibendum sed massa eget, convallis finibus metus.</p>
-      <p>Pellentesque interdum eros et nisl varius, a interdum lacus dapibus.
-        Maecenas commodo semper consequat. Praesent a mollis elit, at rutrum mi.
-        Proin lectus urna, bibendum sed massa eget, convallis finibus metus.</p>
+        <HorizontalBarChart
+          data={data}
+          dataKey={'sortOrder'}
+          dataValue={'rentalChange'}
+          dataKeyLabel={'label'}
+          title={'Change in Rental Units'}
+          subtitle={'By Monthly Rent Bracket'}
+        />
     </div>
     <div className={rightSectionClass}>
     </div>
