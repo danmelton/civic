@@ -46,7 +46,8 @@
     "redux-form": "^6.6.0",
     "redux-logger": "^2.8.2",
     "redux-thunk": "^2.1.0",
-    "reselect": "^3.0.0"
+    "reselect": "^3.0.0",
+    "emotion": "^9.1.1"
   },
   "devDependencies": {
     "@hackoregon/civic-babel-presets": "^1.0.0-alpha.1c62c05f",

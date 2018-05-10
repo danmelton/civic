@@ -11,6 +11,7 @@ export { default as Slider } from './Slider/Slider';
 export { default as Footer } from './Footer/Footer';
 export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
 export { default as Header } from './Navigation/Header';
+export { default as Hero } from './Hero/Hero';
 export { default as Nav } from './Navigation/Nav';
 export { default as NavRouterLink } from './Navigation/NavRouterLink';
 export { default as RechartsPie } from './RechartsPie/RechartsPie';
@@ -24,6 +25,6 @@ export { default as Media } from './Media/Media';
 export { default as Logo } from './Logo/Logo';
 export { default as ShareCollection } from './Share/ShareCollection';
 export { default as isClient } from './utils/isClient';
-export { default as CivicVictoryTheme } from "./VictoryTheme/VictoryThemeIndex";
+export { default as CivicVictoryTheme } from './VictoryTheme/VictoryThemeIndex';
 
 import './fonts.css';
